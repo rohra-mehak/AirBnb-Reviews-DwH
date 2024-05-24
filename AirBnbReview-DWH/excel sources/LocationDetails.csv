@@ -1,0 +1,54 @@
+name,alpha2Code,alpha3Code,capital,region,subregion,population,latlng,demonym,area,gini,timezones,borders,nativeName,numericCode,flag,cioc
+Åland Islands,AX,ALA,Mariehamn,Europe,Northern Europe,28875,60.116667 19.9,Ålandish,1580,,[List],[List],Åland,248,https://restcountries.eu/data/ala.svg,
+Albania,AL,ALB,Tirana,Europe,Southern Europe,2886026,41 20,Albanian,28748,34.5,[List],[List],Shqipëria,008,https://restcountries.eu/data/alb.svg,ALB
+Andorra,AD,AND,Andorra la Vella,Europe,Southern Europe,78014,42.5 1.5,Andorran,468,,[List],[List],Andorra,020,https://restcountries.eu/data/and.svg,AND
+Austria,AT,AUT,Vienna,Europe,Western Europe,8725931,47.33333333 13.33333333,Austrian,83871,26,[List],[List],Österreich,040,https://restcountries.eu/data/aut.svg,AUT
+Belarus,BY,BLR,Minsk,Europe,Eastern Europe,9498700,53 28,Belarusian,207600,26.5,[List],[List],?????????,112,https://restcountries.eu/data/blr.svg,BLR
+Belgium,BE,BEL,Brussels,Europe,Western Europe,11319511,50.83333333 4,Belgian,30528,33,[List],[List],België,056,https://restcountries.eu/data/bel.svg,BEL
+Bosnia and Herzegovina,BA,BIH,Sarajevo,Europe,Southern Europe,3531159,44 18,"Bosnian, Herzegovinian",51209,36.2,[List],[List],Bosna i Hercegovina,070,https://restcountries.eu/data/bih.svg,BIH
+Bulgaria,BG,BGR,Sofia,Europe,Eastern Europe,7153784,43 25,Bulgarian,110879,28.2,[List],[List],????????,100,https://restcountries.eu/data/bgr.svg,BUL
+Croatia,HR,HRV,Zagreb,Europe,Southern Europe,4190669,45.16666666 15.5,Croatian,56594,33.7,[List],[List],Hrvatska,191,https://restcountries.eu/data/hrv.svg,CRO
+Cyprus,CY,CYP,Nicosia,Europe,Southern Europe,847000,35 33,Cypriot,9251,,[List],[List],??????,196,https://restcountries.eu/data/cyp.svg,CYP
+Czech Republic,CZ,CZE,Prague,Europe,Eastern Europe,10558524,49.75 15.5,Czech,78865,26,[List],[List],?eská republika,203,https://restcountries.eu/data/cze.svg,CZE
+Denmark,DK,DNK,Copenhagen,Europe,Northern Europe,5717014,56 10,Danish,43094,24,[List],[List],Danmark,208,https://restcountries.eu/data/dnk.svg,DEN
+Estonia,EE,EST,Tallinn,Europe,Northern Europe,1315944,59 26,Estonian,45227,36,[List],[List],Eesti,233,https://restcountries.eu/data/est.svg,EST
+Faroe Islands,FO,FRO,Tórshavn,Europe,Northern Europe,49376,62 -7,Faroese,1393,,[List],[List],Føroyar,234,https://restcountries.eu/data/fro.svg,
+Finland,FI,FIN,Helsinki,Europe,Northern Europe,5491817,64 26,Finnish,338424,26.9,[List],[List],Suomi,246,https://restcountries.eu/data/fin.svg,FIN
+France,FR,FRA,Paris,Europe,Western Europe,66710000,46 2,French,640679,32.7,[List],[List],France,250,https://restcountries.eu/data/fra.svg,FRA
+Germany,DE,DEU,Berlin,Europe,Western Europe,81770900,51 9,German,357114,28.3,[List],[List],Deutschland,276,https://restcountries.eu/data/deu.svg,GER
+Gibraltar,GI,GIB,Gibraltar,Europe,Southern Europe,33140,36.13333333 -5.35,Gibraltar,6,,[List],[List],Gibraltar,292,https://restcountries.eu/data/gib.svg,
+Greece,GR,GRC,Athens,Europe,Southern Europe,10858018,39 22,Greek,131990,34.3,[List],[List],??????,300,https://restcountries.eu/data/grc.svg,GRE
+Guernsey,GG,GGY,St. Peter Port,Europe,Northern Europe,62999,49.46666666 -2.58333333,Channel Islander,78,,[List],[List],Guernsey,831,https://restcountries.eu/data/ggy.svg,
+Holy See,VA,VAT,Rome,Europe,Southern Europe,451,41.9 12.45,,0.44,,[List],[List],Sancta Sedes,336,https://restcountries.eu/data/vat.svg,
+Hungary,HU,HUN,Budapest,Europe,Eastern Europe,9823000,47 20,Hungarian,93028,31.2,[List],[List],Magyarország,348,https://restcountries.eu/data/hun.svg,HUN
+Iceland,IS,ISL,Reykjavík,Europe,Northern Europe,334300,65 -18,Icelander,103000,,[List],[List],Ísland,352,https://restcountries.eu/data/isl.svg,ISL
+Ireland,IE,IRL,Dublin,Europe,Northern Europe,6378000,53 -8,Irish,70273,34.3,[List],[List],Éire,372,https://restcountries.eu/data/irl.svg,IRL
+Isle of Man,IM,IMN,Douglas,Europe,Northern Europe,84497,54.25 -4.5,Manx,572,,[List],[List],Isle of Man,833,https://restcountries.eu/data/imn.svg,
+Italy,IT,ITA,Rome,Europe,Southern Europe,60665551,42.83333333 12.83333333,Italian,301336,36,[List],[List],Italia,380,https://restcountries.eu/data/ita.svg,ITA
+Jersey,JE,JEY,Saint Helier,Europe,Northern Europe,100800,49.25 -2.16666666,Channel Islander,116,,[List],[List],Jersey,832,https://restcountries.eu/data/jey.svg,
+Latvia,LV,LVA,Riga,Europe,Northern Europe,1961600,57 25,Latvian,64559,36.6,[List],[List],Latvija,428,https://restcountries.eu/data/lva.svg,LAT
+Liechtenstein,LI,LIE,Vaduz,Europe,Western Europe,37623,47.26666666 9.53333333,Liechtensteiner,160,,[List],[List],Liechtenstein,438,https://restcountries.eu/data/lie.svg,LIE
+Lithuania,LT,LTU,Vilnius,Europe,Northern Europe,2872294,56 24,Lithuanian,65300,37.6,[List],[List],Lietuva,440,https://restcountries.eu/data/ltu.svg,LTU
+Luxembourg,LU,LUX,Luxembourg,Europe,Western Europe,576200,49.75 6.16666666,Luxembourger,2586,30.8,[List],[List],Luxembourg,442,https://restcountries.eu/data/lux.svg,LUX
+Macedonia (the former Yugoslav Republic of),MK,MKD,Skopje,Europe,Southern Europe,2058539,41.83333333 22,Macedonian,25713,43.2,[List],[List],??????????,807,https://restcountries.eu/data/mkd.svg,MKD
+Malta,MT,MLT,Valletta,Europe,Southern Europe,425384,35.83333333 14.58333333,Maltese,316,,[List],[List],Malta,470,https://restcountries.eu/data/mlt.svg,MLT
+Moldova (Republic of),MD,MDA,Chi?in?u,Europe,Eastern Europe,3553100,47 29,Moldovan,33846,33,[List],[List],Moldova,498,https://restcountries.eu/data/mda.svg,MDA
+Monaco,MC,MCO,Monaco,Europe,Western Europe,38400,43.73333333 7.4,Monegasque,2.02,,[List],[List],Monaco,492,https://restcountries.eu/data/mco.svg,MON
+Montenegro,ME,MNE,Podgorica,Europe,Southern Europe,621810,42.5 19.3,Montenegrin,13812,30,[List],[List],???? ????,499,https://restcountries.eu/data/mne.svg,MNE
+Netherlands,NL,NLD,Amsterdam,Europe,Western Europe,17019800,52.5 5.75,Dutch,41850,30.9,[List],[List],Nederland,528,https://restcountries.eu/data/nld.svg,NED
+Norway,NO,NOR,Oslo,Europe,Northern Europe,5223256,62 10,Norwegian,323802,25.8,[List],[List],Norge,578,https://restcountries.eu/data/nor.svg,NOR
+Poland,PL,POL,Warsaw,Europe,Eastern Europe,38437239,52 20,Polish,312679,34.1,[List],[List],Polska,616,https://restcountries.eu/data/pol.svg,POL
+Portugal,PT,PRT,Lisbon,Europe,Southern Europe,10374822,39.5 -8,Portuguese,92090,38.5,[List],[List],Portugal,620,https://restcountries.eu/data/prt.svg,POR
+Republic of Kosovo,XK,KOS,Pristina,Europe,Eastern Europe,1733842,42.666667 21.166667,Kosovar,10908,,[List],[List],Republika e Kosovës,,https://restcountries.eu/data/kos.svg,
+Romania,RO,ROU,Bucharest,Europe,Eastern Europe,19861408,46 25,Romanian,238391,30,[List],[List],România,642,https://restcountries.eu/data/rou.svg,ROU
+Russian Federation,RU,RUS,Moscow,Europe,Eastern Europe,146599183,60 100,Russian,17124442,40.1,[List],[List],??????,643,https://restcountries.eu/data/rus.svg,RUS
+San Marino,SM,SMR,City of San Marino,Europe,Southern Europe,33005,43.76666666 12.41666666,Sammarinese,61,,[List],[List],San Marino,674,https://restcountries.eu/data/smr.svg,SMR
+Serbia,RS,SRB,Belgrade,Europe,Southern Europe,7076372,44 21,Serbian,88361,27.8,[List],[List],??????,688,https://restcountries.eu/data/srb.svg,SRB
+Slovakia,SK,SVK,Bratislava,Europe,Eastern Europe,5426252,48.66666666 19.5,Slovak,49037,26,[List],[List],Slovensko,703,https://restcountries.eu/data/svk.svg,SVK
+Slovenia,SI,SVN,Ljubljana,Europe,Southern Europe,2064188,46.11666666 14.81666666,Slovene,20273,31.2,[List],[List],Slovenija,705,https://restcountries.eu/data/svn.svg,SLO
+Spain,ES,ESP,Madrid,Europe,Southern Europe,46438422,40 -4,Spanish,505992,34.7,[List],[List],España,724,https://restcountries.eu/data/esp.svg,ESP
+Svalbard and Jan Mayen,SJ,SJM,Longyearbyen,Europe,Northern Europe,2562,78 20,Norwegian,,,[List],[List],Svalbard og Jan Mayen,744,https://restcountries.eu/data/sjm.svg,
+Sweden,SE,SWE,Stockholm,Europe,Northern Europe,9894888,62 15,Swedish,450295,25,[List],[List],Sverige,752,https://restcountries.eu/data/swe.svg,SWE
+Switzerland,CH,CHE,Bern,Europe,Western Europe,8341600,47 8,Swiss,41284,33.7,[List],[List],Schweiz,756,https://restcountries.eu/data/che.svg,SUI
+Ukraine,UA,UKR,Kiev,Europe,Eastern Europe,42692393,49 32,Ukrainian,603700,26.4,[List],[List],???????,804,https://restcountries.eu/data/ukr.svg,UKR
+United Kingdom of Great Britain and Northern Ireland,GB,GBR,London,Europe,Northern Europe,65110000,54 -2,British,242900,34,[List],[List],United Kingdom,826,https://restcountries.eu/data/gbr.svg,GBR

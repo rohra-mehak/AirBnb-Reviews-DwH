@@ -1,0 +1,3261 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/8/2021 2:46:42 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-7VTAA6LT"
+  DTS:CreatorName="LAPTOP-7VTAA6LT\hp"
+  DTS:DTSID="{3A52B48A-8408-4BD2-B8D2-BEAF5D44F60C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LocaleID="16393"
+  DTS:ObjectName="Package2"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{2CCCC793-0B0E-446C-AD66-318CB18A8533}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CD4C222A-1D27-4CB0-ACAE-074E84BFD5F9}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Data warehouses\DATA TO PROCESS\listings_detailed_for_profiling_2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ï»¿id"
+              DTS:DTSID="{BAB95443-DCDA-493C-B93A-04AAFC469E9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="scrape_id"
+              DTS:DTSID="{84BA98B8-EDFF-4B9B-A475-D67352ADAF7A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="last_scraped"
+              DTS:DTSID="{F5FEA46C-8863-46F6-9205-494B7A7DC122}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="experiences_offered"
+              DTS:DTSID="{D812EA47-2F5C-46D5-9747-6F29D86AA818}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="medium_url"
+              DTS:DTSID="{D6DC25FF-8EB9-4433-AC74-1968FCB5F63A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="xl_picture_url"
+              DTS:DTSID="{B9391FA4-0CD3-4FAF-A27B-A95D79C0426F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_id"
+              DTS:DTSID="{F124C4EE-88B1-4A58-848F-D605C15FCC09}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_name"
+              DTS:DTSID="{8A44BE57-3B39-4127-918D-ADCA26E55E65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_since"
+              DTS:DTSID="{228AD2B6-D8F1-4AC8-B9C3-1D2EBC6B0947}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_response_time"
+              DTS:DTSID="{577DE589-E9E2-4E10-8157-F60C74554341}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_response_rate"
+              DTS:DTSID="{5F2CAE74-C984-41DE-A9A2-75C069FBC716}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_acceptance_rate"
+              DTS:DTSID="{4B522F8C-4CE5-4537-AB38-5199D1E5E5B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_is_superhost"
+              DTS:DTSID="{50F25424-29E6-466F-9352-7C43F02943AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_neighbourhood"
+              DTS:DTSID="{67FCFD38-AD44-4499-92B8-2E1AA07A535B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_listings_count"
+              DTS:DTSID="{3DCF6575-C409-4D7B-99C6-F921EB04A711}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_total_listings_count"
+              DTS:DTSID="{FFCE2305-A734-445C-82E5-D83851012371}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_has_profile_pic"
+              DTS:DTSID="{082EA38D-C35D-4410-923C-CD9CBFFA10EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_identity_verified"
+              DTS:DTSID="{2DA8A44B-C370-4EB3-97D2-50D5398B6E3A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="neighbourhood"
+              DTS:DTSID="{37AB1589-979B-47A1-8C28-58E5D71D5726}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{46102D8F-95BE-4ACE-805C-2D1935E097BE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{F6C31C28-D04E-4303-83AB-7C49EF9D855A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="zipcode"
+              DTS:DTSID="{44763BBA-6DBF-4275-9D5C-A9862AA1B689}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="market"
+              DTS:DTSID="{1DD11C2A-AA01-4365-B148-BDF358637FEC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code"
+              DTS:DTSID="{3B80525B-A918-4649-9ED1-8CCFEF0D3B30}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country"
+              DTS:DTSID="{B7706ABF-CD8F-4EBC-A91A-7EDEF5A44712}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="latitude"
+              DTS:DTSID="{0494140F-DF4C-496F-9941-6627D9328B04}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="longitude"
+              DTS:DTSID="{E9F00D46-60FB-4963-87C3-C247FEB120A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="is_location_exact"
+              DTS:DTSID="{082A6373-C994-4398-8958-EC450A26BB20}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="property_type"
+              DTS:DTSID="{A8CE06CB-BEFE-40FD-942F-701B7DDEE128}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="room_type"
+              DTS:DTSID="{44328B0F-83A8-493F-BD82-AE218BC11A10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="accommodates"
+              DTS:DTSID="{8A1A576B-02E5-472E-BFF0-1F3B32646F4C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bathrooms"
+              DTS:DTSID="{05C6F843-ECE0-48B6-BF47-5D7C8A65594C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bedrooms"
+              DTS:DTSID="{6C9EE43C-39C3-43A6-BE15-3ACECD203832}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="beds"
+              DTS:DTSID="{FBD800CB-F343-4152-B492-2F70BCC62593}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bed_type"
+              DTS:DTSID="{D1114634-760F-414F-9D8F-5DB72B5E1C4E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="square_feet"
+              DTS:DTSID="{1A7FFCA3-58E5-4940-BC37-468DA58955CC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price"
+              DTS:DTSID="{94701C32-A1C7-4838-BCB2-DD2A2F7E6B33}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="weekly_price"
+              DTS:DTSID="{82876657-F948-44FC-986E-698A4FD8ABB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="monthly_price"
+              DTS:DTSID="{65F367E0-4361-43F6-9057-C8FC0C79A2B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="security_deposit"
+              DTS:DTSID="{56D64FD8-9869-446F-8658-1B05305BBD18}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cleaning_fee"
+              DTS:DTSID="{BC0F72A1-8191-400C-993B-C8273454C347}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="guests_included"
+              DTS:DTSID="{20685036-BF93-4B2E-9DEA-8E0078F24935}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="extra_people"
+              DTS:DTSID="{4B48A37C-74BD-428B-BF3E-F0E5B52A5C8E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="minimum_nights"
+              DTS:DTSID="{CEEF96A1-BF2C-4D8A-AF40-84489F3C5520}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="maximum_nights"
+              DTS:DTSID="{1DB342E8-97F1-45A0-8E34-9B3E72AEC1C0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="minimum_minimum_nights"
+              DTS:DTSID="{87C317EB-8B2B-4A31-BDC7-DAB9C887FC7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="maximum_minimum_nights"
+              DTS:DTSID="{E6F48F2D-B02F-4C48-9B0E-C8C0F0A0F452}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="minimum_maximum_nights"
+              DTS:DTSID="{EDDF05E8-0D18-481C-9240-4E3AB3F45236}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="maximum_maximum_nights"
+              DTS:DTSID="{D679E763-B720-409C-9A7A-95C73628677F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="minimum_nights_avg_ntm"
+              DTS:DTSID="{C527FA9A-CD33-49B8-9855-E7D3A3A76788}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="maximum_nights_avg_ntm"
+              DTS:DTSID="{2361FD10-8E74-4BBE-8594-3B0CB134D7AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calendar_updated"
+              DTS:DTSID="{A6A99BCB-EDD9-462E-A8AA-30F9B6427A3D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="has_availability"
+              DTS:DTSID="{3F0B10AD-FD84-4133-9B9B-CD00CAD9AC43}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="availability_30"
+              DTS:DTSID="{178A0BFE-CCB7-4755-B84C-F78CCAC35947}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="availability_60"
+              DTS:DTSID="{F33715EA-4853-4A45-A0BF-36A812DD857E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="availability_90"
+              DTS:DTSID="{E50182D7-FF5D-4F4C-BA85-483771CACA7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="availability_365"
+              DTS:DTSID="{60570DE4-9F63-4C60-B031-4B65008F2B68}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calendar_last_scraped"
+              DTS:DTSID="{CADF95E0-B063-48D5-97E6-993889C09575}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="number_of_reviews"
+              DTS:DTSID="{55C452F1-7130-4E66-9828-872C90FC6F27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="number_of_reviews_ltm"
+              DTS:DTSID="{04ABD571-484C-4E07-AA83-B43E71D79FDD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_review"
+              DTS:DTSID="{FB1BA2DE-A01C-4992-B542-71EE21165AF1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="last_review"
+              DTS:DTSID="{51B82707-1FA8-4216-B2F0-0C94EFA59F26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_rating"
+              DTS:DTSID="{6BD15B38-9C4A-462D-944F-D9CDF7E1DBE6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_accuracy"
+              DTS:DTSID="{5EC3CB3A-3ECA-4393-993E-CAC42DCA6285}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_cleanliness"
+              DTS:DTSID="{0A0E8EDD-95EF-492A-B189-BB1FD3F3B2D9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_checkin"
+              DTS:DTSID="{CFC35B6A-E46E-4AE8-83EA-BCDADB29DBC6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_communication"
+              DTS:DTSID="{8741E672-64EB-40DC-928D-E812E9C429BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_location"
+              DTS:DTSID="{4578E820-8725-44B9-A3B3-5E44492EE8A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_value"
+              DTS:DTSID="{7E096B0C-D840-45EF-8CEE-8854F82D4B24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="requires_license"
+              DTS:DTSID="{238331A7-F143-4059-9BA0-946D2EF03882}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="license"
+              DTS:DTSID="{7F5B3D86-47F3-41CA-B626-1CFB4590930A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="jurisdiction_names"
+              DTS:DTSID="{A208B76A-ADC9-4791-AB65-B92FE4C8E72F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="instant_bookable"
+              DTS:DTSID="{A9F169EB-8341-4CE6-9B66-C1075FC3F867}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="is_business_travel_ready"
+              DTS:DTSID="{D76201E4-6062-433E-9B89-524922A2C5DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cancellation_policy"
+              DTS:DTSID="{C2903B49-5A79-4552-BC80-4520ECD61990}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="require_guest_profile_picture"
+              DTS:DTSID="{761371BD-5B81-42CD-B39C-8222F74FBB9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="require_guest_phone_verification"
+              DTS:DTSID="{1504FD08-DD68-4E3A-A9DE-109B0B1313DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calculated_host_listings_count"
+              DTS:DTSID="{E4EAEAC9-69F2-4822-AFE5-62C9996FCAF9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calculated_host_listings_count_entire_homes"
+              DTS:DTSID="{2A64DD4F-B615-4057-958D-0A6EA498060B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calculated_host_listings_count_private_rooms"
+              DTS:DTSID="{FC7D8B0A-F5AD-4F9A-BEEE-568DAB7B7C93}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calculated_host_listings_count_shared_rooms"
+              DTS:DTSID="{1BACF73A-B4BC-4650-97EB-061E38F46BC7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="reviews_per_month"
+              DTS:DTSID="{5F8C4739-8131-469A-B796-9F2F3A37C1CA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F2F1ABFC-D809-477B-A0B8-5FBBD3DDB8D3}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Data warehouses\DATA TO PROCESS\processed data clean\Listings data.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ï»¿id"
+              DTS:DTSID="{A57D677E-2BD0-486B-8F12-EB268548D1AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="scrape_id"
+              DTS:DTSID="{D5CC0C41-E29C-4A35-AE45-15390BAFCF1F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="last_scraped"
+              DTS:DTSID="{D04DE510-96DD-4CF5-B5CD-CD6438068B2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="experiences_offered"
+              DTS:DTSID="{C52051F6-E95E-4846-B140-9B0D1BA907BD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="medium_url"
+              DTS:DTSID="{8A2CD347-727A-49B0-80CC-68541E674F9F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="xl_picture_url"
+              DTS:DTSID="{8A1E4105-6A34-4BA5-B482-66FA33C68FFF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_id"
+              DTS:DTSID="{7CFACC93-86ED-490D-998D-A47E89FA5D0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_name"
+              DTS:DTSID="{E5DCAC04-CAEA-4484-A3E5-B2AF07978562}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_since"
+              DTS:DTSID="{01948310-6C50-4D71-BBB7-B40BCD736960}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_response_time"
+              DTS:DTSID="{AF537486-B12D-4897-8C9E-95FEC2180FD6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_response_rate"
+              DTS:DTSID="{248932B0-B2BB-4EC2-B584-763D59B51798}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_acceptance_rate"
+              DTS:DTSID="{7A7AD90E-0780-4885-9503-B2985BB0C49D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_is_superhost"
+              DTS:DTSID="{0D64F6AA-A83D-4437-A969-221964B165CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_neighbourhood"
+              DTS:DTSID="{938C06D8-DE80-4E4C-BA52-1DAFB7A947FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_listings_count"
+              DTS:DTSID="{50BF5ADA-3598-4FAD-9F7C-703780B0A56F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_total_listings_count"
+              DTS:DTSID="{85AA4711-F597-49C3-840F-7DD28D9F20E0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_has_profile_pic"
+              DTS:DTSID="{EBF878D1-BA2F-4341-9EE7-2762A9DD9F76}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="host_identity_verified"
+              DTS:DTSID="{CD7330E1-E5BA-4A9D-8366-A3E7DA581948}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="neighbourhood"
+              DTS:DTSID="{53A9E30E-4A62-4924-9D85-C1359BDA2AA2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="city"
+              DTS:DTSID="{C42FD67F-E400-4C64-A8AE-8755277762F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="state"
+              DTS:DTSID="{3ED6B0F7-BE86-4A4D-90C4-3E13056A1592}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="zipcode"
+              DTS:DTSID="{E5D275B0-9180-4047-A36B-D1E591C4F261}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="market"
+              DTS:DTSID="{1E919D28-2303-45B1-B51D-067F81BC771A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country_code"
+              DTS:DTSID="{D2FFA08E-B25F-4308-BDAE-D1724EF064FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country"
+              DTS:DTSID="{B9800F85-7DFA-44A8-935C-7C980E812826}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="latitude"
+              DTS:DTSID="{25347C46-095B-4484-9EFE-525C69429CBC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="longitude"
+              DTS:DTSID="{6FD2D002-0A2B-40B4-94D8-C31166ADA9C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="is_location_exact"
+              DTS:DTSID="{AF3E3CB6-4AE5-4C84-9562-CBB2858959F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="property_type"
+              DTS:DTSID="{4F572363-E3B6-4C4D-B58C-88101FDF065B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="room_type"
+              DTS:DTSID="{1D941AB8-1839-4A3B-B467-31DBEDBD3CF5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="accommodates"
+              DTS:DTSID="{5190E51B-D150-4E21-BA30-A95BD84114CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bathrooms"
+              DTS:DTSID="{C7D62BF0-F322-4030-B8A0-CF3A9088B7CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bedrooms"
+              DTS:DTSID="{C413E9A4-F8D2-486B-A4EF-E80F210310FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="beds"
+              DTS:DTSID="{F888D004-8004-48F1-8DC5-F080ED7257D1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bed_type"
+              DTS:DTSID="{293C6DBF-B0E3-4D85-933E-023570C259B1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="square_feet"
+              DTS:DTSID="{D615E806-4962-42F3-8B7B-4991B18299F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price"
+              DTS:DTSID="{1E9A5826-2B9D-45B2-8115-EECD425C5909}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="weekly_price"
+              DTS:DTSID="{C8AC0217-55E9-430A-8176-C35701DE8128}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="monthly_price"
+              DTS:DTSID="{FCD7BF79-64FB-4DCB-9FC9-37D0A198A701}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="security_deposit"
+              DTS:DTSID="{6C0974D0-8302-47CE-B3AD-4B7F78523565}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cleaning_fee"
+              DTS:DTSID="{21FF555E-B772-41AF-AD97-C5FB347F97A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="guests_included"
+              DTS:DTSID="{BB816643-F8FF-4B5F-B85B-E55E986A16C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="extra_people"
+              DTS:DTSID="{316A22F9-8573-433C-9E17-1E20B512827A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="minimum_nights"
+              DTS:DTSID="{49C52D7F-342E-4BE8-95D5-AFCA686168CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="maximum_nights"
+              DTS:DTSID="{9BC64893-3587-43F8-8AA7-BD7D3BFDB0E6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="minimum_minimum_nights"
+              DTS:DTSID="{8F3451B1-FBCF-4273-944C-B4B0568A12F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="maximum_minimum_nights"
+              DTS:DTSID="{B9C312B8-30E6-4EC8-9228-99A869D7AE54}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="minimum_maximum_nights"
+              DTS:DTSID="{BFF1061F-8406-4E8B-BC48-FEDDBD74650A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="maximum_maximum_nights"
+              DTS:DTSID="{B74F4511-6455-400B-88AB-6764A43C94C2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="minimum_nights_avg_ntm"
+              DTS:DTSID="{DBF5A586-7A37-4313-9066-0FB88CDC212A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="maximum_nights_avg_ntm"
+              DTS:DTSID="{DF174D00-92CF-4256-BD4D-01734946DDF1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calendar_updated"
+              DTS:DTSID="{BBDF0D65-8210-4B8A-8458-79BDF9936B37}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="has_availability"
+              DTS:DTSID="{E8558510-7266-4DAE-9F9E-DBBFD44C2556}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="availability_30"
+              DTS:DTSID="{6BDD98DD-B5D6-4099-941A-CED2A852E62D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="availability_60"
+              DTS:DTSID="{A5E26D13-58FF-41EF-A717-7E42BECCF402}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="availability_90"
+              DTS:DTSID="{0461297C-7548-40D7-B04F-04A644D0BBC5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="availability_365"
+              DTS:DTSID="{CB40BC97-38E0-411D-BA64-DCE6AA83C206}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calendar_last_scraped"
+              DTS:DTSID="{2117DA57-3D53-43E6-8D6F-21EE34F88D2A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="number_of_reviews"
+              DTS:DTSID="{31D96B66-F2B4-4E9D-A8DE-64F013BB0478}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="number_of_reviews_ltm"
+              DTS:DTSID="{6EA0CB3A-FB9C-40C2-BF12-06FD062FB096}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="first_review"
+              DTS:DTSID="{CE71476E-6BA4-47A4-882B-C5018BA07DA3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="last_review"
+              DTS:DTSID="{75319F4C-9624-4152-8A2D-CF8BA9CE4F52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_rating"
+              DTS:DTSID="{408B40B1-DBC4-48A1-9FA5-1BBAAEB82B77}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_accuracy"
+              DTS:DTSID="{E2C202F1-FC4C-4E0F-A4E8-5241CBBA04F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_cleanliness"
+              DTS:DTSID="{8DC7F2E4-E637-460B-8B9B-BE9F996E8FD8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_checkin"
+              DTS:DTSID="{8D08348B-320F-4CEF-8F3F-15ED24C9FAE1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_communication"
+              DTS:DTSID="{25E4A189-D6B5-452F-8BC4-FB8B804A5F83}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_location"
+              DTS:DTSID="{7490F11C-E519-4A0C-B444-BA1015F8A74C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="review_scores_value"
+              DTS:DTSID="{512E10F4-D269-4453-B8EC-63250AD16A21}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="requires_license"
+              DTS:DTSID="{84D26022-E8B8-443C-8B4D-52E96AC36C02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="license"
+              DTS:DTSID="{51E84476-A9BA-4440-A5F3-FDC35993D6BF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="jurisdiction_names"
+              DTS:DTSID="{6D9F817C-6D63-4D0A-8274-ADAB33EB1924}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="instant_bookable"
+              DTS:DTSID="{03E6070A-9FAF-4368-AF4F-0F3E420F8BD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="is_business_travel_ready"
+              DTS:DTSID="{D6B5EBF3-DA88-49E0-A8F9-5D8E9152E6B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cancellation_policy"
+              DTS:DTSID="{CD5D036D-AEAD-4871-B769-8385EF1BEA85}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="require_guest_profile_picture"
+              DTS:DTSID="{87F227EB-BD17-4452-98C2-E205C7A3EA5B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="require_guest_phone_verification"
+              DTS:DTSID="{C07F1B4A-653A-4FCA-AB30-155AAA148439}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calculated_host_listings_count"
+              DTS:DTSID="{194572D1-CA9D-4696-ABDD-5C750477C27B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calculated_host_listings_count_entire_homes"
+              DTS:DTSID="{D298DE35-76E8-490B-9BE2-8479CA5F4D3D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calculated_host_listings_count_private_rooms"
+              DTS:DTSID="{E6ED8648-D461-45D6-AC5F-DC9CCA62A8EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="calculated_host_listings_count_shared_rooms"
+              DTS:DTSID="{5CAFA18D-BC59-4EF4-A503-DC9F5E707BB2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="reviews_per_month"
+              DTS:DTSID="{5D0EB8BB-7F44-43E4-83CB-A1F778FA8E60}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[null values]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{1B55D55A-A3F6-43FF-BDEB-1C7191B339D3}"
+      DTS:ObjectName="null values">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Data warehouses\DATA TO PROCESS\process data dirty\null values listings.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ï»¿id"
+              DTS:DTSID="{BAA96CEA-E9E7-47FC-89DC-244FCFF17D75}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="property_type"
+              DTS:DTSID="{56ABDE71-ED9B-473B-A151-8E477546D88F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="accommodates"
+              DTS:DTSID="{BABAFB45-452E-495E-8C9F-F0E44AD74282}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bathrooms"
+              DTS:DTSID="{86BB9FFB-5DA7-48A5-AC6B-BF9C94663BB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bedrooms"
+              DTS:DTSID="{5A4F2F0C-818D-47C7-85A9-FF23DE658380}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="square_feet"
+              DTS:DTSID="{7342866F-1F58-4BD6-90D1-779F7C233ADF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price"
+              DTS:DTSID="{0FE681ED-A527-477B-B10E-EFBA65E04B61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cleaning_fee"
+              DTS:DTSID="{092EFD22-F6F5-43A1-8FCD-2982A4C4B482}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="security_deposit"
+              DTS:DTSID="{DE820ED9-CBC9-4FBA-AC7F-00F5C46096AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="instant_bookable"
+              DTS:DTSID="{315D98DF-AD93-4156-B742-B2D4DA5B3DBD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[processed data]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{95F995EC-3671-4EC1-9228-0F2563ABCD06}"
+      DTS:ObjectName="processed data">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Data warehouses\DATA TO PROCESS\processed data clean\Listings data.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ï»¿id"
+              DTS:DTSID="{FB6D2AC6-280C-4006-890D-DABEDF9F8FF6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="property_type"
+              DTS:DTSID="{CB13E8C5-7974-4618-A49C-D3C874306CA3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="accommodates"
+              DTS:DTSID="{5EBC8F38-BCA5-4E41-AF02-F114F339A92E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bathrooms"
+              DTS:DTSID="{82A6C255-E007-488C-8ADB-3A2407D0A0EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="bedrooms"
+              DTS:DTSID="{38455E5C-1351-4F90-A00A-10AF03095489}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="square_feet"
+              DTS:DTSID="{DAC236A4-6507-4EEC-A6A4-5C97A0E78479}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price"
+              DTS:DTSID="{DA327173-3A39-4885-B821-091BA4F0AEDB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="cleaning_fee"
+              DTS:DTSID="{06D186EB-4FED-4C11-8163-740A65A46BD4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="security_deposit"
+              DTS:DTSID="{2FA26D64-5C40-4F00-814C-12EFC781A8EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="instant_bookable"
+              DTS:DTSID="{286373F1-77BE-42F2-A867-10E318880455}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\clean and extract guest data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F54057AA-7A11-4B18-B903-CFC6F9F02249}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="clean and extract guest data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Cleaning listings csv"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4AC57728-2C4A-486F-86D6-65B7BEEB9472}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Cleaning listings csv"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Cleaning listings csv\Conditional Split"
+              componentClassID="Microsoft.ConditionalSplit"
+              contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+              name="Conditional Split"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input]"
+                  description="Input to the Conditional Split Transformation"
+                  name="Conditional Split Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input].Columns[price]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="price"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[price]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input].Columns[cleaning_fee]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="cleaning_fee"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[cleaning_fee]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input].Columns[security_deposit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="security_deposit"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[security_deposit]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input].Columns[accommodates]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="accommodates"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[accommodates]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input].Columns[bathrooms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bathrooms"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bathrooms]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input].Columns[bedrooms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bedrooms"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bedrooms]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Cleaning listings csv\Conditional Split.Outputs[null values]"
+                  description="Output 1 of the Conditional Split Transformation"
+                  errorOrTruncationOperation="Computation"
+                  errorRowDisposition="FailComponent"
+                  exclusionGroup="1"
+                  name="null values"
+                  synchronousInputId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input]"
+                  truncationRowDisposition="FailComponent">
+                  <properties>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                      name="Expression">[ISNULL](#{Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bedrooms]}) || [ISNULL](#{Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bathrooms]}) || [ISNULL](#{Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[accommodates]}) || [ISNULL](#{Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[price]}) || ([ISNULL](#{Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[security_deposit]})) || ([ISNULL](#{Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[cleaning_fee]}))</property>
+                    <property
+                      containsID="true"
+                      dataType="System.String"
+                      description="Specifies the friendly version of the expression. This expression version uses column names."
+                      expressionType="Notify"
+                      name="FriendlyExpression">ISNULL(bedrooms) || ISNULL(bathrooms) || ISNULL(accommodates) || ISNULL(price) || (ISNULL(security_deposit)) || (ISNULL(cleaning_fee))</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                      name="EvaluationOrder">0</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Cleaning listings csv\Conditional Split.Outputs[default]"
+                  description="Default Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  name="default"
+                  synchronousInputId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input]">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      name="IsDefaultOut">true</property>
+                  </properties>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Cleaning listings csv\Conditional Split.Outputs[Conditional Split Error Output]"
+                  description="Error Output of the Conditional Split Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Conditional Split Error Output"
+                  synchronousInputId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cleaning listings csv\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cleaning listings csv\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Cleaning listings csv\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="16393"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cleaning listings csv\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[processed data]"
+                  connectionManagerRefId="Package.ConnectionManagers[processed data]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[ï»¿id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ï»¿id"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ï»¿id]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿id]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[property_type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="property_type"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[property_type]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[property_type]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[accommodates]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="accommodates"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[accommodates]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[accommodates]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[bathrooms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bathrooms"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[bathrooms]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bathrooms]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[bedrooms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bedrooms"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[bedrooms]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bedrooms]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[square_feet]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="square_feet"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[square_feet]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[square_feet]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[price]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="price"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[price]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[price]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[cleaning_fee]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="cleaning_fee"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[cleaning_fee]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[cleaning_fee]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[security_deposit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="security_deposit"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[security_deposit]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[security_deposit]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].Columns[instant_bookable]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="instant_bookable"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[instant_bookable]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[instant_bookable]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ï»¿id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ï»¿id" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[property_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="property_type" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[accommodates]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="accommodates" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[bathrooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bathrooms" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[bedrooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bedrooms" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[square_feet]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="square_feet" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[security_deposit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="security_deposit" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[cleaning_fee]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cleaning_fee" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[instant_bookable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="instant_bookable" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Cleaning listings csv\Flat File Destination 1"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="16393"
+              name="Flat File Destination 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cleaning listings csv\Flat File Destination 1.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[null values]"
+                  connectionManagerRefId="Package.ConnectionManagers[null values]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[ï»¿id]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ï»¿id"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ï»¿id]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿id]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[property_type]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="property_type"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[property_type]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[property_type]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[accommodates]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="accommodates"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[accommodates]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[accommodates]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[bathrooms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bathrooms"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[bathrooms]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bathrooms]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[bedrooms]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="bedrooms"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[bedrooms]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bedrooms]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[square_feet]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="square_feet"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[square_feet]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[square_feet]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[price]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="price"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[price]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[price]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[cleaning_fee]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="cleaning_fee"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[cleaning_fee]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[cleaning_fee]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[security_deposit]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="security_deposit"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[security_deposit]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[security_deposit]" />
+                    <inputColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[instant_bookable]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="instant_bookable"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[instant_bookable]"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[instant_bookable]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ï»¿id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ï»¿id" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[property_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="property_type" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[accommodates]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="accommodates" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[bathrooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bathrooms" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[bedrooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bedrooms" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[square_feet]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="square_feet" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[cleaning_fee]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cleaning_fee" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[security_deposit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="security_deposit" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[instant_bookable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="instant_bookable" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Cleaning listings csv\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="16393"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Cleaning listings csv\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿id]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ï»¿id]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[ï»¿id]"
+                      name="ï»¿id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[property_type]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[property_type]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[property_type]"
+                      name="property_type"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[accommodates]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[accommodates]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[accommodates]"
+                      name="accommodates"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bathrooms]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[bathrooms]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bathrooms]"
+                      name="bathrooms"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bedrooms]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[bedrooms]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[bedrooms]"
+                      name="bedrooms"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[square_feet]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[square_feet]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[square_feet]"
+                      name="square_feet"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[price]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[price]"
+                      name="price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[cleaning_fee]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cleaning_fee]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[cleaning_fee]"
+                      name="cleaning_fee"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[security_deposit]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[security_deposit]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[security_deposit]"
+                      name="security_deposit"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[instant_bookable]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[instant_bookable]"
+                      length="50"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].Columns[instant_bookable]"
+                      name="instant_bookable"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ï»¿id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="ï»¿id" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[scrape_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="scrape_id" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_scraped]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="last_scraped" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[experiences_offered]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="experiences_offered" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[medium_url]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="medium_url" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[xl_picture_url]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="xl_picture_url" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_id]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_id" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_name" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_since]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_since" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_response_time]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_response_time" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_response_rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_response_rate" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_acceptance_rate]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_acceptance_rate" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_is_superhost]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_is_superhost" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_neighbourhood]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_neighbourhood" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_listings_count]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_listings_count" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_total_listings_count]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_total_listings_count" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_has_profile_pic]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_has_profile_pic" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[host_identity_verified]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="host_identity_verified" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[neighbourhood]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="neighbourhood" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[city]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="city" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[state]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="state" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[zipcode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="zipcode" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[market]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="market" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country_code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country_code" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[country]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[latitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="latitude" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[longitude]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="longitude" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[is_location_exact]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="is_location_exact" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[property_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="property_type" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[room_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="room_type" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[accommodates]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="accommodates" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[bathrooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bathrooms" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[bedrooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bedrooms" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[beds]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="beds" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[bed_type]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="bed_type" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[square_feet]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="square_feet" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[weekly_price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="weekly_price" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[monthly_price]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="monthly_price" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[security_deposit]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="security_deposit" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cleaning_fee]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cleaning_fee" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[guests_included]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="guests_included" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[extra_people]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="extra_people" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[minimum_nights]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="minimum_nights" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[maximum_nights]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="maximum_nights" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[minimum_minimum_nights]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="minimum_minimum_nights" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[maximum_minimum_nights]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="maximum_minimum_nights" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[minimum_maximum_nights]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="minimum_maximum_nights" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[maximum_maximum_nights]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="maximum_maximum_nights" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[minimum_nights_avg_ntm]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="minimum_nights_avg_ntm" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[maximum_nights_avg_ntm]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="maximum_nights_avg_ntm" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[calendar_updated]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="calendar_updated" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[has_availability]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="has_availability" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[availability_30]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="availability_30" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[availability_60]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="availability_60" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[availability_90]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="availability_90" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[availability_365]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="availability_365" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[calendar_last_scraped]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="calendar_last_scraped" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[number_of_reviews]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="number_of_reviews" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[number_of_reviews_ltm]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="number_of_reviews_ltm" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[first_review]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="first_review" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_review]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="last_review" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[review_scores_rating]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="review_scores_rating" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[review_scores_accuracy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="review_scores_accuracy" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[review_scores_cleanliness]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="review_scores_cleanliness" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[review_scores_checkin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="review_scores_checkin" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[review_scores_communication]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="review_scores_communication" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[review_scores_location]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="review_scores_location" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[review_scores_value]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="review_scores_value" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[requires_license]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="requires_license" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[license]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="license" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[jurisdiction_names]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="jurisdiction_names" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[instant_bookable]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="instant_bookable" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[is_business_travel_ready]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="is_business_travel_ready" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[cancellation_policy]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cancellation_policy" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[require_guest_profile_picture]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="require_guest_profile_picture" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[require_guest_phone_verification]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="require_guest_phone_verification" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[calculated_host_listings_count]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="calculated_host_listings_count" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[calculated_host_listings_count_entire_homes]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="calculated_host_listings_count_entire_homes" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[calculated_host_listings_count_private_rooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="calculated_host_listings_count_private_rooms" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[calculated_host_listings_count_shared_rooms]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="calculated_host_listings_count_shared_rooms" />
+                    <externalMetadataColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[reviews_per_month]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="reviews_per_month" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Cleaning listings csv.Paths[Conditional Split Default Output]"
+              endId="Package\Cleaning listings csv\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="Conditional Split Default Output"
+              startId="Package\Cleaning listings csv\Conditional Split.Outputs[default]" />
+            <path
+              refId="Package\Cleaning listings csv.Paths[Flat File Source Output]"
+              endId="Package\Cleaning listings csv\Conditional Split.Inputs[Conditional Split Input]"
+              name="Flat File Source Output"
+              startId="Package\Cleaning listings csv\Flat File Source.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Cleaning listings csv.Paths[null values]"
+              endId="Package\Cleaning listings csv\Flat File Destination 1.Inputs[Flat File Destination Input]"
+              name="null values"
+              startId="Package\Cleaning listings csv\Conditional Split.Outputs[null values]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{B4871870-FA95-47BA-AD4C-A331EF086737}"
+      DTS:From="Package\Cleaning listings csv"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\clean and extract guest data" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Cleaning listings csv"
+          TopLeft="8.74999986961519,37.0499993374942" />
+        <NodeLayout
+          Size="213.333333333334,42.6666666666667"
+          Id="Package\clean and extract guest data"
+          TopLeft="41.2499993853271,163.799997071028" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="95.4166665362819,79.7166660041609">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="52.4999995157119,84.0833310668669"
+              Start="0,0"
+              End="52.4999995157119,76.5833310668669">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.0416655334335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38.0416655334335"
+                    Point2="0,42.0416655334335"
+                    Point3="4,42.0416655334335" />
+                  <mssgle:LineSegment
+                    End="48.4999995157119,42.0416655334335" />
+                  <mssgle:CubicBezierSegment
+                    Point1="48.4999995157119,42.0416655334335"
+                    Point2="52.4999995157119,42.0416655334335"
+                    Point3="52.4999995157119,46.0416655334335" />
+                  <mssgle:LineSegment
+                    End="52.4999995157119,76.5833310668669" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Cleaning listings csv">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\Cleaning listings csv\Flat File Destination"
+          TopLeft="29.0000046193603,181.200003161431" />
+        <NodeLayout
+          Size="181.333333333334,42.6666666666667"
+          Id="Package\Cleaning listings csv\Flat File Destination 1"
+          TopLeft="223.749996665865,192.39999655962" />
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\Cleaning listings csv\Conditional Split"
+          TopLeft="137.37500343658,27.5000026732682" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Cleaning listings csv\Flat File Source"
+          TopLeft="400.749999646097,31.8999999302626" />
+        <EdgeLayout
+          Id="Package\Cleaning listings csv.Paths[null values]"
+          TopLeft="240.041670103247,70.1666693399349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="74.3749932292852,122.233327219685"
+              Start="0,0"
+              End="74.3749932292852,114.733327219685">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.6378993785523" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.6378993785523"
+                    Point2="0,49.6378993785523"
+                    Point3="4,49.6378993785523" />
+                  <mssgle:LineSegment
+                    End="70.3749932292852,49.6378993785523" />
+                  <mssgle:CubicBezierSegment
+                    Point1="70.3749932292852,49.6378993785523"
+                    Point2="74.3749932292852,49.6378993785523"
+                    Point3="74.3749932292852,53.6378993785523" />
+                  <mssgle:LineSegment
+                    End="74.3749932292852,114.733327219685" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="13.2682973958926,54.6378993785523,47.8383984375,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cleaning listings csv.Paths[Flat File Source Output]"
+          TopLeft="400.749999646097,51.0333346350987">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-107.374996209517,0"
+              Start="0,0"
+              End="-99.8749962095171,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-99.8749962095171,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Cleaning listings csv.Paths[Conditional Split Default Output]"
+          TopLeft="215.37500343658,70.1666693399349">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-100.37499881722,111.033333821496"
+              Start="0,0"
+              End="-100.37499881722,103.533333821496">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5166669107479" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,51.5166669107479"
+                    Point2="0,55.5166669107479"
+                    Point3="-4,55.5166669107479" />
+                  <mssgle:LineSegment
+                    End="-96.3749988172197,55.5166669107479" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-96.3749988172197,55.5166669107479"
+                    Point2="-100.37499881722,55.5166669107479"
+                    Point3="-100.37499881722,59.5166669107479" />
+                  <mssgle:LineSegment
+                    End="-100.37499881722,103.533333821496" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-66.2534955023599,60.5166669107479,32.1319921875,9.7978515625"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

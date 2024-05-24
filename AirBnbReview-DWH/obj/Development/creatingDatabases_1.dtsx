@@ -1,0 +1,1279 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="6/6/2021 9:21:27 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-7VTAA6LT"
+  DTS:CreatorName="LAPTOP-7VTAA6LT\hp"
+  DTS:DTSID="{9CFC9072-C386-4E80-83A3-18D70C12DD05}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.167"
+  DTS:LocaleID="16393"
+  DTS:ObjectName="creatingDatabases_1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{53C15E81-CA04-44CB-88C3-F4B9191F91B9}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[create_database_connection_manager]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C72A7FE8-0C71-4C29-AF50-B35EED0F5AA8}"
+      DTS:ObjectName="create_database_connection_manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=laptop-7vtaa6lt;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[create_tables_connecion_manager]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F284C400-1318-4888-8682-BDF7DC682925}"
+      DTS:ObjectName="create_tables_connecion_manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=laptop-7vtaa6lt;Initial Catalog=DW_AirBnb;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[laptop-7vtaa6lt.AirbnbData]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{8D0E72AC-2796-4D59-851B-27BB65B7B141}"
+      DTS:ObjectName="laptop-7vtaa6lt.AirbnbData">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=laptop-7vtaa6lt;Initial Catalog=AirbnbData;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[laptop-7vtaa6lt.AirbnbData 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{2BAE7B29-1DB7-4F28-931D-75A3604C294B}"
+      DTS:ObjectName="laptop-7vtaa6lt.AirbnbData 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=laptop-7vtaa6lt;Initial Catalog=AirbnbData;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[laptop-7vtaa6lt.AirbnbData 2]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{C403C6AA-1C83-4C96-BE51-61D335ECCC34}"
+      DTS:ObjectName="laptop-7vtaa6lt.AirbnbData 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=laptop-7vtaa6lt;Initial Catalog=AirbnbData;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[laptop-7vtaa6lt.AirbnbData 3]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{152467BC-9E10-4A8C-95F9-5E216B44BBD4}"
+      DTS:ObjectName="laptop-7vtaa6lt.AirbnbData 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=laptop-7vtaa6lt;Initial Catalog=AirbnbData;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[laptop-7vtaa6lt.AirbnbData 4]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{FB35BAD5-FE1E-4EA4-A09B-8B45668C3801}"
+      DTS:ObjectName="laptop-7vtaa6lt.AirbnbData 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=laptop-7vtaa6lt;Initial Catalog=AirbnbData;Integrated Security=True;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LAPTOP-7VTAA6LT.archive_airBnb]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{F59A6C8A-FADF-41A0-8BD0-39C3084158B3}"
+      DTS:ObjectName="LAPTOP-7VTAA6LT.archive_airBnb">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=LAPTOP-7VTAA6LT;Initial Catalog=archive_airBnb;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[listings.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{503E130A-DEBA-45B4-B188-337B9D61AB28}"
+      DTS:ObjectName="listings.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\hp\Desktop\listings.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[listings_detailed.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{E5F770DE-A236-4279-9013-31856C855FA2}"
+      DTS:ObjectName="listings_detailed.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\hp\Desktop\listings_detailed.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[profile.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{753834F7-0ABE-471C-AD4C-1C4EAB2F12EF}"
+      DTS:ObjectName="profile.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="profile.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[reveiws_detailed.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{D9A289A2-04D6-41D4-9A5A-F06BA923C16D}"
+      DTS:ObjectName="reveiws_detailed.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\hp\Desktop\reveiws_detailed.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[somethingpls.txt]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{6A7328C4-1AEE-4E3D-8389-C5282C48E8DA}"
+      DTS:ObjectName="somethingpls.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="C:\Users\hp\Desktop\somethingpls.txt" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\create archiving db"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{6FF5C8D5-BE2D-4FC2-919D-8890B940C534}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="create archiving db"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C72A7FE8-0C71-4C29-AF50-B35EED0F5AA8}"
+          SQLTask:SqlStatementSource=" IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'archive_airBnb')&#xA;  BEGIN&#xA;    CREATE DATABASE [archive_airBnb]&#xA;end" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\create archving tables"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{6D6A27B3-52B5-4C15-84C2-3D5A8DF8E06F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="create archving tables"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="5">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F59A6C8A-FADF-41A0-8BD0-39C3084158B3}"
+          SQLTask:SqlStatementSource="if OBJECT_ID('archive_Host') is not null drop table archive_Host&#xA;CREATE TABLE  archive_Host (&#xA;    archive_HostID int not null IDENTITY(1,1),&#xA;&#x9;HostID int  not null,&#xA;&#x9;Host_name varchar(255) not null ,&#xA;&#x9;Host_Since date not null ,&#xA;&#x9;response_rate  decimal null,&#xA;&#x9;response_time varchar(255) null ,&#xA;&#x9;Host_Location varchar(255) ,&#xA;&#x9;is_Host_Verfied bit ,&#xA;    &#xA;&#x9;CONSTRAINT PK_Host PRIMARY KEY CLUSTERED (archive_HostID)&#xA;);&#xA;&#xA;if OBJECT_ID('archive_Location') is not null drop table archive_Location&#xA;CREATE TABLE archive_Location (&#xA;&#x9;archive_LocationID int  not null  IDENTITY(1, 1),&#xA;&#x9;Neighbourhood varchar(50) not null ,&#xA;&#x9;Neighbourhood_group varchar(50) null ,&#xA;&#x9;latitude  decimal(8,6) ,&#xA;&#x9;longitude decimal(9,6)  ,&#xA;&#x9; state varchar(50) ,&#xA;                city varchar(50) ,&#xA;&#x9; is_Location_exact bit,&#xA;&#xA;&#x9; CONSTRAINT PK_Location PRIMARY KEY CLUSTERED (archive_LocationID)&#xA;);&#xA;&#xA;if OBJECT_ID('archive_Listing') is not null drop table archive_Listing&#xA;CREATE TABLE archive_Listing(&#xA;     archive_ListingID int not null identity(1,1),&#xA;&#x9;ListingID int  not null,&#xA;&#x9;Listing_type varchar(50)  ,&#xA;&#x9;Acoomodates int,&#xA;&#x9;Bathrooms int ,&#xA;&#x9;Bedrooms int  ,&#xA;&#x9;Area decimal,&#xA;&#x9;listingPrice money,&#xA;                cleaningPrice money,&#xA;&#x9;securityDeposit money,&#xA;&#x9;is_Instantly_Bookable bit &#xA;&#xA;&#x9;CONSTRAINT PK_Listing PRIMARY KEY CLUSTERED (archive_ListingID)&#xA;);&#xA;&#xA;if OBJECT_ID('archive_Guest') is not null drop table archive_Guest&#xA;CREATE TABLE archive_Guest (&#xA;    archive_GuestID int not null IDENTITY(1,1),&#xA;&#x9;GuestID int  not null ,&#xA;&#x9;Guest_firstName varchar(50) not null ,&#xA;&#x9;Guest_lastName  varchar(50)  null ,&#xA;&#x9;Guest_gender varchar(50) not null,&#xA;&#x9;Guest_Dob date ,&#xA;&#x9;Guest_email varchar(255) null ,&#xA;&#x9;Guest_city varchar(50) ,&#xA;&#x9;Guest_isMarried bit ,&#xA;&#xA;&#xA;&#x9;CONSTRAINT PK_archive_Guest PRIMARY KEY CLUSTERED (archive_GuestID)&#xA;    &#xA;);&#xA;&#xA;if OBJECT_ID('fact_revenue') is not null drop table fact_revenue&#xA;CREATE TABLE fact_revenue (&#xA;    revenue_id int not null identity(1,1),&#xA;    archive_HostID int ,&#xA;    DateKey  int,&#xA;    archive_LocationID int,&#xA;&#x9;archive_ListingID int,&#xA;&#x9;RevenueDate Date,&#xA;&#x9;Revenue money,&#xA;&#x9;avg_revenue money,&#xA;&#x9;no_of_guests int,&#xA;&#x9;CONSTRAINT PK_fact_revenue PRIMARY KEY CLUSTERED (revenue_id)&#xA;&#xA;);&#xA;&#xA;if OBJECT_ID('fact_review') is not null drop table fact_review&#xA;CREATE TABLE fact_review (&#xA;    review_id int not null identity(1,1),&#xA;    archive_HostID int,&#xA;    DateKey int,&#xA;    archive_LocationID int,&#xA;&#x9;archive_ListingID int,&#xA;&#x9;archive_GuestID int,&#xA;&#x9;reviewDate Date,&#xA;    reveiwLength int ,&#xA;&#x9;CONSTRAINT PK_fact_review PRIMARY KEY CLUSTERED (review_id)&#xA;);&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create dimListing"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{92239CB3-B77D-49C8-AEF9-DF7B94501ADC}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create dimListing"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F284C400-1318-4888-8682-BDF7DC682925}"
+          SQLTask:SqlStatementSource="if OBJECT_ID('dim_Listing') is not null drop table dim_Listing&#xA;CREATE TABLE dim_Listing(&#xA;     dim_ListingID int not null identity(1,1),&#xA;&#x9;ListingID int  not null,&#xA;&#x9;Listing_type varchar(50)  ,&#xA;&#x9;Acoomodates int,&#xA;&#x9;Bathrooms int ,&#xA;&#x9;Bedrooms int  ,&#xA;&#x9;Area decimal,&#xA;&#x9;listingPrice money,&#xA;                cleaningPrice money,&#xA;&#x9;securityDeposit money,&#xA;&#x9;is_Instantly_Bookable bit &#xA;&#xA;&#x9;CONSTRAINT PK_Listing PRIMARY KEY CLUSTERED (dim_ListingID)&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create dim_Date"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{01207193-6B14-4859-AD68-391167F72493}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create dim_Date"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F284C400-1318-4888-8682-BDF7DC682925}"
+          SQLTask:SqlStatementSource="if OBJECT_ID('dim_Date') is not null drop table dim_Date&#xA;Create TABLE dim_Date (&#xA;         &#xA;  DateID int NOT NULL IDENTITY(1, 1),&#xA; [Date] date NOT NULL,&#xA; [Year] int NOT NULL, &#xA; [Month] int NOT NULL,&#xA; [Day] int NOT NULL,&#xA; [QuarterNumber] int NOT NULL,&#xA; &#xA; CONSTRAINT PK_Dates PRIMARY KEY CLUSTERED (DateID)&#xA;)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create dim_Guest"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{2FA58164-7991-412A-94F5-D68FD6E6EF82}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create dim_Guest"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F284C400-1318-4888-8682-BDF7DC682925}"
+          SQLTask:SqlStatementSource="if OBJECT_ID('dim_Guest') is not null drop table dim_Guest&#xA;CREATE TABLE dim_Guest (&#xA;    dim_GuestID int not null IDENTITY(1,1),&#xA;&#x9;GuestID int  not null ,&#xA;&#x9;Guest_firstName varchar(50) not null ,&#xA;&#x9;Guest_lastName  varchar(50)  null ,&#xA;&#x9;Guest_gender varchar(50) not null,&#xA;&#x9;Guest_Dob date ,&#xA;&#x9;Guest_email varchar(255) null ,&#xA;&#x9;Guest_city varchar(50) ,&#xA;&#x9;Guest_isMarried bit ,&#xA;&#xA;&#xA;&#x9;CONSTRAINT PK_dim_Guest PRIMARY KEY CLUSTERED (dim_GuestID)&#xA;    &#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create dim_Host"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{F33FDD3B-1FDA-414F-9239-CC6F1A738132}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create dim_Host"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F284C400-1318-4888-8682-BDF7DC682925}"
+          SQLTask:SqlStatementSource="if OBJECT_ID('dim_Host') is not null drop table dim_Host&#xA;CREATE TABLE  dim_Host (&#xA;    dim_HostID int not null IDENTITY(1,1),&#xA;&#x9;HostID int  not null,&#xA;&#x9;Host_name varchar(255) not null ,&#xA;&#x9;Host_Since date not null ,&#xA;&#x9;response_rate  decimal null,&#xA;&#x9;response_time varchar(255) null ,&#xA;&#x9;Host_Location varchar(255) ,&#xA;&#x9;is_Host_Verfied bit ,&#xA;    &#xA;&#x9;CONSTRAINT PK_Host PRIMARY KEY CLUSTERED (dim_HostID)&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create dim_Location"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{BAC36709-32B6-4C76-BBFA-B377DA39313B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create dim_Location"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F284C400-1318-4888-8682-BDF7DC682925}"
+          SQLTask:SqlStatementSource="if OBJECT_ID('dim_Location') is not null drop table dim_Location&#xA;CREATE TABLE dim_Location (&#xA;&#x9;dim_LocationID int  not null  IDENTITY(1, 1),&#xA;&#x9;Neighbourhood varchar(50) not null ,&#xA;&#x9;Neighbourhood_group varchar(50) null ,&#xA;&#x9;latitude  decimal(8,6) ,&#xA;&#x9;longitude decimal(9,6)  ,&#xA;&#x9; state varchar(50) ,&#xA;                city varchar(50) ,&#xA;&#x9; is_Location_exact bit,&#xA;&#xA;&#x9; CONSTRAINT PK_Location PRIMARY KEY CLUSTERED (dim_LocationID)&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create DW_AirBnb"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{DFC379C9-EE68-49D0-8767-D078124157F2}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create DW_AirBnb"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C72A7FE8-0C71-4C29-AF50-B35EED0F5AA8}"
+          SQLTask:SqlStatementSource=" IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'DW_AirBnb')&#xA;  BEGIN&#xA;    CREATE DATABASE [DW_AirBnb]&#xA;end" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create fact_revenue"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{77C4D305-4DD3-44D2-9DCE-ED76E6FF4F62}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create fact_revenue"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F284C400-1318-4888-8682-BDF7DC682925}"
+          SQLTask:SqlStatementSource="if OBJECT_ID('fact_revenue') is not null drop table fact_revenue&#xA;CREATE TABLE fact_revenue (&#xA;    revenue_id int not null identity(1,1),&#xA;    dim_HostID int ,&#xA;    DateKey  int,&#xA;    dim_LocationID int,&#xA;&#x9;dim_ListingID int,&#xA;&#x9;RevenueDate Date,&#xA;&#x9;Revenue money,&#xA;&#x9;avg_revenue money,&#xA;&#x9;no_of_guests int,&#xA;&#x9;CONSTRAINT PK_fact_revenue PRIMARY KEY CLUSTERED (revenue_id)&#xA;&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Create fact_review"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{51948B63-CCD1-4C70-AAAF-1D53668CA7B0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Create fact_review"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F284C400-1318-4888-8682-BDF7DC682925}"
+          SQLTask:SqlStatementSource="if OBJECT_ID('fact_review') is not null drop table fact_review&#xA;CREATE TABLE fact_review (&#xA;    review_id int not null identity(1,1),&#xA;    dim_HostID int,&#xA;    DateKey int,&#xA;    dim_LocationID int,&#xA;&#x9;dim_ListingID int,&#xA;&#x9;dim_GuestID int,&#xA;                 listingID int,&#xA;                latitude decimal(8,6),&#xA;              longitude decimal (9,6),&#xA;             hostID int ,&#xA;            guestID int,&#xA;&#x9;reviewDate Date,&#xA;    reveiwLength int ,&#xA;&#x9;CONSTRAINT PK_fact_review PRIMARY KEY CLUSTERED (review_id)&#xA;);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\create staging_db"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5CC92D4A-1F04-404E-BE76-94E1EED59867}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="create staging_db"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C72A7FE8-0C71-4C29-AF50-B35EED0F5AA8}"
+          SQLTask:SqlStatementSource=" IF NOT EXISTS(SELECT * FROM sys.databases WHERE name = 'Staging_db')&#xA;  BEGIN&#xA;    CREATE DATABASE [Staging_db]&#xA;end" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Profiling listings"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:DTSID="{DD9F611B-E769-4164-B4A9-67EFD27CBA30}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Profiling listings"
+      DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="listings.txt"
+          OverwriteDestination="True">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{C403C6AA-1C83-4C96-BE51-61D335ECCC34}</DataSourceID>
+        <Table Schema="dbo" Table="my_listings" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{C403C6AA-1C83-4C96-BE51-61D335ECCC34}</DataSourceID>
+        <Table Schema="dbo" Table="my_listings" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{C403C6AA-1C83-4C96-BE51-61D335ECCC34}</DataSourceID>
+        <Table Schema="dbo" Table="my_listings" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{C403C6AA-1C83-4C96-BE51-61D335ECCC34}</DataSourceID>
+        <Table Schema="dbo" Table="my_listings" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{C403C6AA-1C83-4C96-BE51-61D335ECCC34}</DataSourceID>
+        <Table Schema="dbo" Table="my_listings" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Profiling Listings_detailed"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:DTSID="{56DCA07B-D9CA-43F1-B28F-EB4AC8ED9C7D}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Profiling Listings_detailed"
+      DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="listings_detailed.txt"
+          OverwriteDestination="True">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{152467BC-9E10-4A8C-95F9-5E216B44BBD4}</DataSourceID>
+        <Table Schema="dbo" Table="listings_detailed" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{152467BC-9E10-4A8C-95F9-5E216B44BBD4}</DataSourceID>
+        <Table Schema="dbo" Table="listings_detailed" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{152467BC-9E10-4A8C-95F9-5E216B44BBD4}</DataSourceID>
+        <Table Schema="dbo" Table="listings_detailed" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{152467BC-9E10-4A8C-95F9-5E216B44BBD4}</DataSourceID>
+        <Table Schema="dbo" Table="listings_detailed" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{152467BC-9E10-4A8C-95F9-5E216B44BBD4}</DataSourceID>
+        <Table Schema="dbo" Table="listings_detailed" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data_profiling reveiws_detailed"
+      DTS:CreationName="Microsoft.DataProfilingTask"
+      DTS:Description="Data Profiling Task"
+      DTS:DTSID="{FE369323-BCB7-4CFF-9379-B003DCB96B60}"
+      DTS:ExecutableType="Microsoft.DataProfilingTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data_profiling reveiws_detailed"
+      DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <DataProfilingTaskData
+          Destination="reveiws_detailed.txt"
+          OverwriteDestination="True">
+          <ProfileInput><![CDATA[<?xml version="1.0" encoding="utf-16"?>
+<DataProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/sqlserver/2008/DataDebugger/">
+  <ProfileVersion>1.0</ProfileVersion>
+  <DataSources />
+  <DataProfileInput>
+    <ProfileMode>Exact</ProfileMode>
+    <Timeout>0</Timeout>
+    <Requests>
+      <ColumnNullRatioProfileRequest ID="NullRatioReq">
+        <DataSourceID>{FB35BAD5-FE1E-4EA4-A09B-8B45668C3801}</DataSourceID>
+        <Table Schema="dbo" Table="review_detailed" />
+        <Column IsWildCard="true" />
+      </ColumnNullRatioProfileRequest>
+      <ColumnStatisticsProfileRequest ID="StatisticsReq">
+        <DataSourceID>{FB35BAD5-FE1E-4EA4-A09B-8B45668C3801}</DataSourceID>
+        <Table Schema="dbo" Table="review_detailed" />
+        <Column IsWildCard="true" />
+      </ColumnStatisticsProfileRequest>
+      <ColumnLengthDistributionProfileRequest ID="LengthDistReq">
+        <DataSourceID>{FB35BAD5-FE1E-4EA4-A09B-8B45668C3801}</DataSourceID>
+        <Table Schema="dbo" Table="review_detailed" />
+        <Column IsWildCard="true" />
+        <IgnoreLeadingSpace>false</IgnoreLeadingSpace>
+        <IgnoreTrailingSpace>true</IgnoreTrailingSpace>
+      </ColumnLengthDistributionProfileRequest>
+      <ColumnValueDistributionProfileRequest ID="ValueDistReq">
+        <DataSourceID>{FB35BAD5-FE1E-4EA4-A09B-8B45668C3801}</DataSourceID>
+        <Table Schema="dbo" Table="review_detailed" />
+        <Column IsWildCard="true" />
+        <Option>FrequentValues</Option>
+        <FrequentValueThreshold>0.001</FrequentValueThreshold>
+      </ColumnValueDistributionProfileRequest>
+      <CandidateKeyProfileRequest ID="KeyReq">
+        <DataSourceID>{FB35BAD5-FE1E-4EA4-A09B-8B45668C3801}</DataSourceID>
+        <Table Schema="dbo" Table="review_detailed" />
+        <KeyColumns>
+          <Column IsWildCard="true" />
+        </KeyColumns>
+        <ThresholdSetting>Specified</ThresholdSetting>
+        <KeyStrengthThreshold>0.95</KeyStrengthThreshold>
+        <VerifyOutputInFastMode>false</VerifyOutputInFastMode>
+        <MaxNumberOfViolations>100</MaxNumberOfViolations>
+      </CandidateKeyProfileRequest>
+    </Requests>
+  </DataProfileInput>
+  <DataProfileOutput>
+    <Profiles />
+  </DataProfileOutput>
+</DataProfile>]]></ProfileInput>
+        </DataProfilingTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Populate date_Dimension"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{226C0E08-E629-4E1B-A350-473628F4E72D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Populate date_Dimension"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="4">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{F284C400-1318-4888-8682-BDF7DC682925}"
+          SQLTask:SqlStatementSource="-- declare variables to hold the start and end date&#xA;DECLARE @StartDate datetime&#xA;DECLARE @EndDate datetime&#xA;&#xA;--- assign values to the start date and end date we &#xA;-- want our reports to cover (this should also take&#xA;-- into account any future reporting needs)&#xA;SET @StartDate = '01/01/2010'&#xA;SET @EndDate = '12/31/2019' &#xA;&#xA;-- using a while loop increment from the start date &#xA;-- to the end date&#xA;DECLARE @LoopDate datetime&#xA;SET @LoopDate = @StartDate&#xA;&#xA;WHILE @LoopDate &lt;= @EndDate&#xA;BEGIN&#xA; -- add a record into the date dimension table for this date&#xA; INSERT INTO dim_Date VALUES (&#xA;  @LoopDate,&#xA;  Year(@LoopDate),&#xA;  Month(@LoopDate), &#xA;  Day(@LoopDate), &#xA;  CASE WHEN Month(@LoopDate) IN (1, 2, 3) THEN 1&#xA;   WHEN Month(@LoopDate) IN (4, 5, 6) THEN 2&#xA;   WHEN Month(@LoopDate) IN (7, 8, 9) THEN 3&#xA;   WHEN Month(@LoopDate) IN (10, 11, 12) THEN 4&#xA;  END &#xA; &#xA;   &#xA; )  &#xA; &#xA; -- increment the LoopDate by 1 day before&#xA; -- we start the loop again&#xA; SET @LoopDate = DateAdd(d, 1, @LoopDate)&#xA;END" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Use DW_AirBnb"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{6609445C-4A0F-4C5A-A6B4-925B35B53FB4}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Use DW_AirBnb"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{C72A7FE8-0C71-4C29-AF50-B35EED0F5AA8}"
+          SQLTask:SqlStatementSource="use [DW_AirBnb];&#xA;go" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{5F567AA6-8383-407A-8E6F-BF0CC516717B}"
+      DTS:From="Package\Data Profiling Listings_detailed"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Data_profiling reveiws_detailed"
+      DTS:Value="2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{980B97EB-931E-47F3-9D2E-2E0145DA7734}"
+      DTS:From="Package\Data Profiling listings"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Data Profiling Listings_detailed"
+      DTS:Value="2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
+      DTS:CreationName=""
+      DTS:DTSID="{393600B3-935F-4940-A771-829E80D5F555}"
+      DTS:From="Package\Create dim_Location"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 10"
+      DTS:To="Package\Create dimListing" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
+      DTS:CreationName=""
+      DTS:DTSID="{ADE87154-B4BC-4DDD-9C95-D033170C4989}"
+      DTS:From="Package\Create dim_Date"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 11"
+      DTS:To="Package\Populate date_Dimension" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 12]"
+      DTS:CreationName=""
+      DTS:DTSID="{3D201596-A29E-4ABF-9C95-979055557329}"
+      DTS:From="Package\Create DW_AirBnb"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 12"
+      DTS:To="Package\create staging_db" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 13]"
+      DTS:CreationName=""
+      DTS:DTSID="{773EA004-2B6B-486D-AE31-AF28A301691B}"
+      DTS:From="Package\Use DW_AirBnb"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 13"
+      DTS:To="Package\create archiving db" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 14]"
+      DTS:CreationName=""
+      DTS:DTSID="{BED29D7D-14AB-41BA-B53D-A59E556B6D7C}"
+      DTS:From="Package\create archiving db"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 14"
+      DTS:To="Package\create archving tables" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{5F17A7D1-FCBF-4055-9C0E-CC2BA2C3A783}"
+      DTS:From="Package\Create DW_AirBnb"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Use DW_AirBnb" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{9DC33CB1-77F7-45F1-9B9A-274376E687E0}"
+      DTS:From="Package\Data_profiling reveiws_detailed"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Create DW_AirBnb"
+      DTS:Value="2" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{C66C0DDA-1C66-4130-8CF5-37A77ECB26F5}"
+      DTS:From="Package\Use DW_AirBnb"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Create fact_revenue" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{B7253549-1D82-44C6-8427-8CCAAF204C63}"
+      DTS:From="Package\Create fact_review"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Create dim_Guest" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{56DCF0E7-D85D-47D5-826D-8F050AEF4AF0}"
+      DTS:From="Package\Use DW_AirBnb"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Create dim_Host" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{CFD5AE17-A2EB-43DF-9DA8-FFD4F0DB5C24}"
+      DTS:From="Package\Use DW_AirBnb"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Create dim_Location" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{DE71A8E0-BEE2-447B-AA95-3E7F700DCB42}"
+      DTS:From="Package\Create dim_Host"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Create dim_Date" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{03BB2DF6-4944-4E35-92F7-67D307C77A2D}"
+      DTS:From="Package\Use DW_AirBnb"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\Create fact_review" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\create archiving db"
+          TopLeft="508.468743883539,167.145831226682" />
+        <NodeLayout
+          Size="182.666666666667,42.6666666666667"
+          Id="Package\create archving tables"
+          TopLeft="712.510407728299,178.262496812418" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Create dim_Date"
+          TopLeft="345.424101995637,396.530351169929" />
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\Create dim_Guest"
+          TopLeft="127.700890954251,409.107731733496" />
+        <NodeLayout
+          Size="158.666666666667,42.6666666666667"
+          Id="Package\Create dim_Host"
+          TopLeft="420.624993732199,303.745828855608" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Create dim_Location"
+          TopLeft="618.191955073937,264.119043849905" />
+        <NodeLayout
+          Size="161.333333333334,42.6666666666667"
+          Id="Package\Create dimListing"
+          TopLeft="541.874991925434,422.075589495964" />
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\Create DW_AirBnb"
+          TopLeft="141.884918520671,103.123014029033" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Create fact_revenue"
+          TopLeft="18.8020830531605,284.915670015125" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Create fact_review"
+          TopLeft="225.334818070821,311.988091012339" />
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\create staging_db"
+          TopLeft="40.781249392312,187.216665190558" />
+        <NodeLayout
+          Size="178.666666666667,42.6666666666667"
+          Id="Package\Data Profiling listings"
+          TopLeft="45.8705350307614,36.2142850667238" />
+        <NodeLayout
+          Size="224,42.6666666666667"
+          Id="Package\Data Profiling Listings_detailed"
+          TopLeft="283.529261648101,37.2666660002869" />
+        <NodeLayout
+          Size="226.666666666667,57.3333333333334"
+          Id="Package\Data_profiling reveiws_detailed"
+          TopLeft="588.516856309781,76.7025779935306" />
+        <NodeLayout
+          Size="200,42.6666666666667"
+          Id="Package\Populate date_Dimension"
+          TopLeft="302.208329654609,491.120828652209" />
+        <NodeLayout
+          Size="153.333333333334,42.6666666666667"
+          Id="Package\Use DW_AirBnb"
+          TopLeft="251.463289903698,189.170631538001" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="507.529261648101,58.5999993336202">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="80.9875946616797,38.5470231043548"
+              Start="0,0"
+              End="73.4875946616797,38.5470231043548">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="43.2733018613425,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="43.2733018613425,0"
+                    Point2="47.2733018613425,0"
+                    Point3="47.2733018613425,4" />
+                  <mssgle:LineSegment
+                    End="47.2733018613425,34.5470231043548" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47.2733018613425,34.5470231043548"
+                    Point2="47.2733018613425,38.5470231043548"
+                    Point3="51.2733018613425,38.5470231043548" />
+                  <mssgle:LineSegment
+                    End="73.4875946616797,38.5470231043548" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="21.9688487363425,-17.609375,50.60890625,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="224.537201697428,58.0738088668387">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="58.9920599506723,0"
+              Start="0,0"
+              End="51.4920599506723,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="51.4920599506723,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0.441576850336141,5,50.60890625,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 10]"
+          TopLeft="706.191955073937,306.119043849905">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-83.6502964818369,115.956545646059"
+              Start="0,0"
+              End="-83.6502964818369,108.456545646059">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.9782728230297" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,53.9782728230297"
+                    Point2="0,57.9782728230297"
+                    Point3="-4,57.9782728230297" />
+                  <mssgle:LineSegment
+                    End="-79.6502964818369,57.9782728230297" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-79.6502964818369,57.9782728230297"
+                    Point2="-83.6502964818369,57.9782728230297"
+                    Point3="-83.6502964818369,61.9782728230297" />
+                  <mssgle:LineSegment
+                    End="-83.6502964818369,108.456545646059" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11]"
+          TopLeft="424.757435328971,439.197017836595">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-22.5491056743616,51.9238108156131"
+              Start="0,0"
+              End="-22.5491056743616,44.4238108156131">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.9619054078065" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.9619054078065"
+                    Point2="0,25.9619054078065"
+                    Point3="-4,25.9619054078065" />
+                  <mssgle:LineSegment
+                    End="-18.5491056743616,25.9619054078065" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.5491056743616,25.9619054078065"
+                    Point2="-22.5491056743616,25.9619054078065"
+                    Point3="-22.5491056743616,29.9619054078065" />
+                  <mssgle:LineSegment
+                    End="-22.5491056743616,44.4238108156131" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 12]"
+          TopLeft="198.773807409559,145.789680695699">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-75.9925580172474,41.4269844948583"
+              Start="0,0"
+              End="-75.9925580172474,33.9269844948583">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.807144264158" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.807144264158"
+                    Point2="0,16.807144264158"
+                    Point3="-4,16.807144264158" />
+                  <mssgle:LineSegment
+                    End="-71.9925580172474,16.807144264158" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-71.9925580172474,16.807144264158"
+                    Point2="-75.9925580172474,16.807144264158"
+                    Point3="-75.9925580172474,20.807144264158" />
+                  <mssgle:LineSegment
+                    End="-75.9925580172474,33.9269844948583" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 13]"
+          TopLeft="404.796623237032,210.503964871334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="103.672120646507,-22.0248003113193"
+              Start="0,0"
+              End="96.1721206465074,-22.0248003113193">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="47.8360603232537,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47.8360603232537,0"
+                    Point2="51.8360603232537,0"
+                    Point3="51.8360603232537,-4" />
+                  <mssgle:LineSegment
+                    End="51.8360603232537,-18.0248003113193" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.8360603232537,-18.0248003113193"
+                    Point2="51.8360603232537,-22.0248003113193"
+                    Point3="55.8360603232537,-22.0248003113193" />
+                  <mssgle:LineSegment
+                    End="96.1721206465074,-22.0248003113193" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 14]"
+          TopLeft="677.802077216872,188.479164560015">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="34.7083305114262,11.1166655857365"
+              Start="0,0"
+              End="27.2083305114262,11.1166655857365">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="13.3541652557131,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="13.3541652557131,0"
+                    Point2="17.3541652557131,0"
+                    Point3="17.3541652557131,4" />
+                  <mssgle:LineSegment
+                    End="17.3541652557131,7.11666558573646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.3541652557131,7.11666558573646"
+                    Point2="17.3541652557131,11.1166655857365"
+                    Point3="21.3541652557131,11.1166655857365" />
+                  <mssgle:LineSegment
+                    End="27.2083305114262,11.1166655857365" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="251.662696298448,145.789680695699">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="76.4672602719166,43.3809508423017"
+              Start="0,0"
+              End="76.4672602719166,35.8809508423017">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.5998786301573" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.5998786301573"
+                    Point2="0,17.5998786301573"
+                    Point3="4,17.5998786301573" />
+                  <mssgle:LineSegment
+                    End="72.4672602719166,17.5998786301573" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.4672602719166,17.5998786301573"
+                    Point2="76.4672602719166,17.5998786301573"
+                    Point3="76.4672602719166,21.5998786301573" />
+                  <mssgle:LineSegment
+                    End="76.4672602719166,35.8809508423017" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="588.516856309781,113.591466882419">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-279.965271122443,10.8648804799465"
+              Start="0,0"
+              End="-272.465271122443,10.8648804799465">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-112.546628702556,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-112.546628702556,0"
+                    Point2="-116.546628702556,0"
+                    Point3="-116.546628702556,4" />
+                  <mssgle:LineSegment
+                    End="-116.546628702556,6.86488047994646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-116.546628702556,6.86488047994646"
+                    Point2="-116.546628702556,10.8648804799465"
+                    Point3="-120.546628702556,10.8648804799465" />
+                  <mssgle:LineSegment
+                    End="-272.465271122443,10.8648804799465" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-141.851081827556,-17.609375,50.60890625,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="284.529956570365,231.837298204668">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-178.394540183871,53.0783718104571"
+              Start="0,0"
+              End="-178.394540183871,45.5783718104571">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.9944546889348" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.9944546889348"
+                    Point2="0,15.9944546889348"
+                    Point3="-4,15.9944546889348" />
+                  <mssgle:LineSegment
+                    End="-174.394540183871,15.9944546889348" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-174.394540183871,15.9944546889348"
+                    Point2="-178.394540183871,15.9944546889348"
+                    Point3="-178.394540183871,19.9944546889348" />
+                  <mssgle:LineSegment
+                    End="-178.394540183871,45.5783718104571" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="309.334818070821,353.988091012339">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-99.63392711657,55.1196407211573"
+              Start="0,0"
+              End="-99.63392711657,47.6196407211573">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5598203605786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5598203605786"
+                    Point2="0,27.5598203605786"
+                    Point3="-4,27.5598203605786" />
+                  <mssgle:LineSegment
+                    End="-95.63392711657,27.5598203605786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-95.63392711657,27.5598203605786"
+                    Point2="-99.63392711657,27.5598203605786"
+                    Point3="-99.63392711657,31.5598203605786" />
+                  <mssgle:LineSegment
+                    End="-99.63392711657,47.6196407211573" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="342.663289903698,231.837298204668">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="157.295037161834,71.9085306509408"
+              Start="0,0"
+              End="157.295037161834,64.4085306509408">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.1896016170398" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.1896016170398"
+                    Point2="0,32.1896016170398"
+                    Point3="4,32.1896016170398" />
+                  <mssgle:LineSegment
+                    End="153.295037161834,32.1896016170398" />
+                  <mssgle:CubicBezierSegment
+                    Point1="153.295037161834,32.1896016170398"
+                    Point2="157.295037161834,32.1896016170398"
+                    Point3="157.295037161834,36.1896016170398" />
+                  <mssgle:LineSegment
+                    End="157.295037161834,64.4085306509408" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="371.729956570365,231.837298204668">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="334.461998503572,32.2817456452373"
+              Start="0,0"
+              End="334.461998503572,24.7817456452373">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,5.72767061970699" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,5.72767061970699"
+                    Point2="0,9.72767061970699"
+                    Point3="4,9.72767061970699" />
+                  <mssgle:LineSegment
+                    End="330.461998503572,9.72767061970699" />
+                  <mssgle:CubicBezierSegment
+                    Point1="330.461998503572,9.72767061970699"
+                    Point2="334.461998503572,9.72767061970699"
+                    Point3="334.461998503572,13.727670619707" />
+                  <mssgle:LineSegment
+                    End="334.461998503572,24.7817456452373" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="499.958327065532,346.412495522275">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-75.2008917365617,50.1178556476536"
+              Start="0,0"
+              End="-75.2008917365617,42.6178556476536">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.0589278238268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.0589278238268"
+                    Point2="0,25.0589278238268"
+                    Point3="-4,25.0589278238268" />
+                  <mssgle:LineSegment
+                    End="-71.2008917365617,25.0589278238268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-71.2008917365617,25.0589278238268"
+                    Point2="-75.2008917365617,25.0589278238268"
+                    Point3="-75.2008917365617,29.0589278238268" />
+                  <mssgle:LineSegment
+                    End="-75.2008917365617,42.6178556476536" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="311.465720653926,231.837298204668">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,80.1507928076711"
+              Start="0,0"
+              End="0,72.6507928076711">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,72.6507928076711" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
